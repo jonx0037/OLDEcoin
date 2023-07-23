@@ -67,10 +67,6 @@
             </div>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
-        <div class="custom-control custom-switch mr-3">
-            <input type="checkbox" class="custom-control-input" id="darkSwitch" name="darkSwitch">
-            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-        </div>
         <div class="d-lg-inline-flex me-auto">
             <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.facebook.com/"><i
                     class="fab fa-facebook-f"></i></a>
@@ -624,33 +620,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        var darkSwitch = document.getElementById("darkSwitch");
-        window.addEventListener('load', function(){
-            if(darkSwitch) {
-                initTheme();
-                darkSwitch.addEventListener('change', function() {
-                    resetTheme();
-                });
-            }
-        });
-    
-        function initTheme() {
-            var darkThemeSelected = (localStorage.getItem('darkSwitch') !== null && localStorage.getItem('darkSwitch') === 'dark');
-            darkSwitch.checked = darkThemeSelected;
-            darkThemeSelected ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
-        };
-    
-        function resetTheme() {
-            if(darkSwitch.checked) {
-                document.body.setAttribute('data-theme', 'dark');
-                localStorage.setItem('darkSwitch', 'dark');
-            } else {
-                document.body.removeAttribute('data-theme');
-                localStorage.removeItem('darkSwitch');
-            }
-        }
-    </script>    
 </body>
 
 </html>

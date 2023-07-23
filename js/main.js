@@ -82,13 +82,4 @@
     }
   });
   
-  // Styles for dark mode theme
-  $('[data-theme="dark"]').css({
-    'background-color': '#121212',
-    color: 'white'
-  });
-
-  // Styles for links in dark mode theme
-  $('[data-theme="dark"] a').css('color', '#ddd');
-
 })(jQuery);

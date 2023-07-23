@@ -1,7 +1,6 @@
 :root {
     --primary-color: #16D5FF;
     --subtle-color: #999999;
-    --light-bg: #F2F8FE;
     --dark-bg: #111111;
     --light-text: #FFFFFF;
 }
@@ -13,48 +12,20 @@
     z-index: 99;
 }
 
+body,
+a,
+h1,
+h2,
+h3,
 h4,
 h5,
-h6 {
-    font-weight: 500;
+h6,
+p {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
 }
 
-/* Light mode styles */
-[data-theme="light"],
-[data-theme="light"] a {
-    background-color: var(--light-bg);
-    color: black;
-}
 
-.custom-control-input {
-    width: 54px;
-    height: 28px;
-}
-
-.custom-control-label::before {
-    width: 28px;
-    height: 28px;
-}
-
-.custom-control-label::after {
-    left: 26px;
-    width: 22px;
-    height: 22px;
-}
-
-/* Dark mode styles */
-[data-theme="dark"],
-[data-theme="dark"] a,
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3,
-[data-theme="dark"] h4,
-[data-theme="dark"] h5,
-[data-theme="dark"] h6,
-[data-theme="dark"] p {
-    background-color: var(--dark-bg);
-    color: var(--light-text);
-}
 
 /*** Spinner ***/
 #spinner {
