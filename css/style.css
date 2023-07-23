@@ -1,17 +1,18 @@
-/********** Template CSS **********/
 :root {
-    --primary: #16D5FF;
-    --secondary: #999999;
-    --light: #F2F8FE;
-    --dark: #111111;
+  --primary: #16D5FF;
+  --secondary: #999999;
+  --light: #F2F8FE;
+  --dark: #111111;
+
+  /* Define other variables as needed */
 }
 
 .back-to-top {
-    position: fixed;
-    display: none;
-    right: 30px;
-    bottom: 60px;
-    z-index: 99;
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 60px;
+  z-index: 99;
 }
 
 h4,
@@ -20,22 +21,14 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-weight: 500 !important;
+  font-weight: 500 !important;
 }
 
-:root {
-  --dark-bg: #121212;
-  --light-text: #ddd;
-}
-
-[data-theme="dark"],
-[data-theme="dark"] a {
-  background-color: var(--dark-bg);
-  color: white;
-}
-
-[data-theme="dark"] a {
-  color: var(--light-text);
+/* Light mode styles */
+[data-theme="light"],
+[data-theme="light"] a {
+  background-color: var(--light);
+  color: black;
 }
 
 .custom-control-input {
@@ -54,7 +47,12 @@ h6,
   height: 22px;
 }
 
-
+/* Dark mode styles */
+[data-theme="dark"],
+[data-theme="dark"] a {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
