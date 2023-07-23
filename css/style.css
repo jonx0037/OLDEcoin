@@ -1,33 +1,25 @@
 :root {
-  --primary: #16D5FF;
-  --secondary: #999999;
-  --light: #F2F8FE;
-  --dark: #111111;
-
-  /* Define other variables as needed */
+  --main-color: #16D5FF;
+  --subtle-color: #999999;
+  --light-bg: #F2F8FE;
+  --dark-bg: #111111;
 }
 
 .back-to-top {
   position: fixed;
-  display: none;
   right: 30px;
   bottom: 60px;
   z-index: 99;
 }
 
-h4,
-h5,
-h6,
-.h4,
-.h5,
-.h6 {
-  font-weight: 500 !important;
+h4, h5, h6, .h4, .h5, .h6 {
+  font-weight: 500;
 }
 
 /* Light mode styles */
 [data-theme="light"],
 [data-theme="light"] a {
-  background-color: var(--light);
+  background-color: var(--light-bg);
   color: black;
 }
 
@@ -49,11 +41,6 @@ h6,
 
 /* Dark mode styles */
 [data-theme="dark"],
-[data-theme="dark"] a {
-  background-color: var(--dark-bg);
-  color: var(--light-text);
-}
-[data-theme="dark"],
 [data-theme="dark"] a,
 [data-theme="dark"] h1,
 [data-theme="dark"] h2,
@@ -62,8 +49,8 @@ h6,
 [data-theme="dark"] h5,
 [data-theme="dark"] h6,
 [data-theme="dark"] p {
-  background-color: var(--dark);
-  color: var(--light);
+  background-color: var(--dark-bg);
+  color: var(--light-bg);
 }
 
 /*** Spinner ***/
