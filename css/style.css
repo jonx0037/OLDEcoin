@@ -1,19 +1,26 @@
+/********** Template CSS **********/
 :root {
-  --primary-color: #16D5FF;
-  --subtle-color: #999999;
-  --dark-bg: #111111;
-  --light-text: #FFFFFF;
+    --primary: #16D5FF;
+    --secondary: #999999;
+    --light: #F2F8FE;
+    --dark: #111111;
 }
 
-/* Set all elements to use dark mode */
-* {
-  background-color: var(--dark-bg);
-  color: var(--light-text);
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 60px;
+    z-index: 99;
 }
 
-/* Except for images */
-img {
-  filter: invert(1);
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+    font-weight: 500 !important;
 }
 
 
@@ -101,7 +108,7 @@ img {
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link {
+    .navbar .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
     }
