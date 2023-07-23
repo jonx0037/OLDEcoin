@@ -23,14 +23,20 @@ h6,
     font-weight: 500 !important;
 }
 
-[data-theme="dark"] {
-    background-color: #121212;
-    color: white;
+:root {
+  --dark-bg: #121212;
+  --light-text: #ddd;
 }
+
+[data-theme="dark"],
 [data-theme="dark"] a {
-    color: #ddd;
+  background-color: var(--dark-bg);
+  color: white;
 }
-/* Add more selectors as necessary */
+
+[data-theme="dark"] a {
+  color: var(--light-text);
+}
 
 
 /*** Spinner ***/
